@@ -209,3 +209,26 @@ nav .right .links a {
 nav .right .links a:last-of-type {
   margin-right: 0;
 }
+footer {
+  background: #EFEFEF;
+  padding: 5%;
+  font-size: 1.6rem;
+  border-top: 1px solid #E0E0E0;
+}
+footer nav {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #646378;
+}
+footer nav a {
+  margin-bottom: 4%;
+  font-weight: 600;
+}
+footer small {
+  display: block;
+  margin-top: 2%;
+  font-size: 1.4rem;
+}

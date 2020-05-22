@@ -213,7 +213,6 @@ nav .right button.sign-up {
   font-weight: 600;
   font-size: 1.8rem;
   color: #FFFFFF;
-  padding: 1rem 2rem;
   padding: 0.5rem 2rem;
   font-size: 1.6rem;
 }
@@ -297,7 +296,6 @@ footer small {
   font-weight: 600;
   font-size: 1.8rem;
   color: #FFFFFF;
-  padding: 1rem 2rem;
 }
 .landing .content .for-helpers button {
   border: none;
@@ -306,8 +304,148 @@ footer small {
   font-weight: 600;
   font-size: 1.8rem;
   color: #FFFFFF;
-  padding: 1rem 2rem;
 }
 .landing .app-demo img.desktop {
   height: 85vh;
+}
+.features {
+  padding: 5%;
+}
+.features h1 {
+  font-size: 2.4rem;
+}
+.features h1,
+.features h2 {
+  font-weight: bold;
+}
+.features section {
+  margin-top: 10%;
+  padding: 0 5%;
+}
+.features section h3 {
+  font-size: 2rem;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+.features section .feature {
+  margin: 5vh 0;
+}
+.features .students h2 {
+  color: #9400B9;
+}
+.features .students .demo {
+  margin: 0 auto;
+  max-width: 350px;
+  margin-bottom: 5%;
+}
+.features .students .demo .input {
+  font-size: 2rem;
+  padding: 3% 5%;
+  border-radius: 3px;
+  border: 1px solid #E0E0E0;
+  color: #646378;
+}
+.features .students .demo .view-ticket {
+  border: 2px solid #E0E0E0;
+  border-left: 5px solid #C716C4;
+  padding: 5%;
+}
+.features .students .demo .view-ticket h4 {
+  font-size: 1.6rem;
+  margin-bottom: 1vh;
+}
+.features .students .demo .view-ticket p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.features .helpers h2 {
+  color: #0AC3CF;
+}
+.features .helpers .demo {
+  margin: 0 auto;
+  margin-bottom: 5%;
+  max-width: 350px;
+}
+.features .helpers .demo .view-ticket {
+  padding: 5% 0%;
+  border: 2px solid #E0E0E0;
+  border-left: 5px solid #C716C4;
+  display: flex;
+  justify-content: space-evenly;
+}
+.features .helpers .demo .view-ticket .meta-data {
+  flex: 1;
+  text-align: center;
+}
+.features .helpers .demo .view-ticket .info {
+  padding-right: 5%;
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+}
+.features .helpers .demo .view-ticket h4 {
+  font-weight: bold;
+}
+.features .helpers .demo .view-ticket h4,
+.features .helpers .demo .view-ticket p {
+  margin-bottom: 1vh;
+}
+.features .helpers .demo .view-ticket button {
+  color: #0070EB;
+  border: 1px solid #0070EB;
+  background: none;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  align-self: flex-end;
+  display: block;
+}
+.features .helpers .demo .view-ticket .users img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.features .helpers .demo time {
+  line-height: 1.8rem;
+  font-size: 1.6rem;
+  display: block;
+  width: 100%;
+}
+.features .helpers .demo .assign {
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #E0E0E0;
+  border-radius: 5px;
+  padding: 5% 0;
+}
+.features .helpers .demo .assign .staff {
+  width: 65%;
+  padding: 4% 0;
+  margin: 0 auto;
+  display: flex;
+}
+.features .helpers .demo .checkbox {
+  padding: 5%;
+  margin-right: 5%;
+  display: inline-block;
+  height: 1.8rem;
+  width: 2rem;
+  border: 1px solid #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features .helpers .demo .resolved-issue {
+  border: 2px solid #E0E0E0;
+  border-left: 5px solid #C716C4;
+  padding: 5%;
+  text-align: center;
+}
+.features .helpers .demo .resolved-issue h4 {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.features .helpers .demo .resolved-issue img {
+  vertical-align: middle;
 }

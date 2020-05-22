@@ -1,0 +1,115 @@
+html {
+    font-size: 62.5%;
+    font-family: @font;
+}
+
+body {
+    font-size: 2rem;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: @font;
+}
+
+.q-logo {
+    color: @surfer-sea;
+    font-weight: 600;
+    font-size: 4rem;
+
+    span {
+        padding-left: 5px;
+        font-size: 1.6rem;
+        color: @primary-text-color;
+        vertical-align: middle;
+        font-weight: 600;
+        
+        @media @tablet {
+            display: inline-block;
+        }
+    }
+}
+
+.tablet, .desktop {
+    display: none;
+}
+
+@media @tablet {
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
+}
+
+@media @desktop {
+    .tablet {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 1rem;
+
+    .right {
+        flex: 2;
+        text-align: right;
+
+        button.sign-up {
+            .default-button(@primary-text-color, @primary-bg-color);
+            padding: .5rem 2rem;
+            font-size: 1.6rem;
+        }
+
+        .links {
+            font-size: 1.8rem;
+            color: @tertiary-text-color;
+            a {
+                margin: 0px 3%;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background: @inactive-bg-color;
+    padding: 5%;
+    font-size: 1.6rem;
+    border-top: 1px solid @grey-stroke;
+
+    nav {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        color: @tertiary-text-color;
+
+        a {
+            margin-bottom: 4%;
+            font-weight: 600;
+        }
+    }
+
+    small {
+        display: block;
+        margin-top: 2%;
+        font-size: 1.4rem;
+    }
+}

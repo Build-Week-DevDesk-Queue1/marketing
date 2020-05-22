@@ -126,13 +126,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%;
   font-family: "Source Sans Pro", sans-serif;
 }
 body {
   font-size: 2rem;
-  box-sizing: border-box;
 }
 a {
   color: inherit;
@@ -140,6 +142,16 @@ a {
 }
 button {
   font-family: "Source Sans Pro", sans-serif;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+p {
+  line-height: 2rem;
+  font-size: 1.6rem;
 }
 .q-logo {
   color: #0AC3CF;
@@ -158,6 +170,9 @@ button {
     display: inline-block;
   }
 }
+.mobile.tablet {
+  display: block;
+}
 .tablet,
 .desktop {
   display: none;
@@ -166,11 +181,14 @@ button {
   .mobile {
     display: none;
   }
+  .mobile.tablet,
   .tablet {
     display: block;
   }
 }
 @media (min-width: 800px) {
+  .mobile,
+  .mobile.tablet,
   .tablet {
     display: none;
   }
@@ -231,4 +249,65 @@ footer small {
   display: block;
   margin-top: 2%;
   font-size: 1.4rem;
+}
+.landing {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@media (min-width: 800px) {
+  .landing {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 0;
+  }
+}
+.landing .content div {
+  margin: 5vh 0;
+  max-width: 400px;
+}
+.landing .content div h2 {
+  font-weight: 600;
+}
+@media (min-width: 800px) {
+  .landing .content div h2 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 800px) {
+  .landing .content div h3 {
+    font-size: 2.2rem;
+  }
+}
+.landing .content div h2,
+.landing .content div h3 {
+  margin-bottom: 1vh;
+}
+.landing .content div p {
+  margin: 2vh 0;
+}
+.landing .content .for-students button {
+  border: none;
+  border-radius: 5px;
+  background-color: #C716C4;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+}
+.landing .content .for-helpers button {
+  border: none;
+  border-radius: 5px;
+  background-color: #0AC3CF;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  padding: 1rem 2rem;
+}
+.landing .app-demo img.desktop {
+  height: 85vh;
 }

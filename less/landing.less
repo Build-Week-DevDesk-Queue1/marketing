@@ -1,0 +1,57 @@
+.landing {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    @media @desktop {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 0;
+    }
+
+    .content {
+        div {
+            margin: 5vh 0;
+            max-width: 400px;
+            h2 {
+                font-weight: 600;
+                
+                @media @desktop {
+                    font-size: 3rem;
+                }
+            }
+
+            h3 {
+                @media @desktop {
+                    font-size: 2.2rem;
+                }
+            }
+
+            h2,h3 {
+                margin-bottom: 1vh;
+            }
+
+            p {
+                margin: 2vh 0;
+            }
+        }
+
+        .for-students button {
+            .default-button(@murple-purple, @primary-bg-color)
+        }
+
+        .for-helpers button {
+            .default-button(@surfer-sea, @primary-bg-color);
+        }
+    }
+
+    .app-demo {
+        img.desktop {
+            height: 85vh;
+        }
+    }
+}

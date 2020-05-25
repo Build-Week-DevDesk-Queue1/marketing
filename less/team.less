@@ -33,6 +33,7 @@
             .flex-column();
             text-align: center;
             width: 45%;
+            justify-content: center;
         }
 
         @media @desktop {
@@ -58,6 +59,10 @@
 
         .info {
             flex: 2.5;
+
+            @media @tablet {
+                flex: 0;
+            }
         }
 
         .image img {

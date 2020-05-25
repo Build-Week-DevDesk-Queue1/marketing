@@ -518,6 +518,7 @@ footer small {
     flex-direction: column;
     text-align: center;
     width: 45%;
+    justify-content: center;
   }
 }
 @media (min-width: 800px) {
@@ -540,6 +541,11 @@ footer small {
 }
 .team .member .info {
   flex: 2.5;
+}
+@media (min-width: 500px) {
+  .team .member .info {
+    flex: 0;
+  }
 }
 .team .member .image img {
   border-radius: 50%;

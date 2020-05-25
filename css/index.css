@@ -487,7 +487,68 @@ footer small {
 .team .team-members {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  .team .team-members {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    align-items: stretch;
+  }
 }
 .team .member {
-  margin: 5% 0;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #E0E0E0;
+  border-left: 10px solid #0AC3CF;
+  padding: 2vh 0;
+}
+@media (min-width: 500px) {
+  .team .member {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 45%;
+  }
+}
+@media (min-width: 800px) {
+  .team .member {
+    width: 30%;
+  }
+}
+.team .member h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.4vh;
+}
+.team .member h3 {
+  font-size: 2rem;
+  margin-bottom: 1vh;
+}
+.team .member .image {
+  flex: 0.5;
+  padding: 0 10px;
+  text-align: center;
+}
+.team .member .info {
+  flex: 2.5;
+}
+.team .member .image img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 75px;
+}
+.team .member button {
+  border: none;
+  border-radius: 5px;
+  background-color: #C716C4;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  font-size: 1.4rem;
 }

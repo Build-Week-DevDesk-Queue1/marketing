@@ -7,9 +7,68 @@
 
     .team-members {
         .flex-column();
+        align-items: center;
+
+        @media @tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 5vh;
+            align-items: stretch;
+        }
     }
 
     .member {
-        margin: 5% 0;
+        .flex-row();
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        width: 100%;
+        max-width: 600px;
+        border: 1px solid @grey-stroke;
+        border-left: 10px solid @surfer-sea;
+        padding: 2vh 0;
+
+        @media @tablet {
+            .flex-column();
+            text-align: center;
+            width: 45%;
+        }
+
+        @media @desktop {
+            width: 30%;
+        }
+
+
+        h2 {
+            font-size: 2.4rem;
+            margin-bottom: .4vh;
+        }
+        
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1vh;
+        }
+
+        .image {
+            flex: .5;
+            padding: 0 10px;
+            text-align: center;
+        }
+
+        .info {
+            flex: 2.5;
+        }
+
+        .image img {
+            border-radius: 50%;
+            width: 100%;
+            max-width: 75px;
+        }
+
+        button {
+            .default-button(@murple-purple, @primary-bg-color);
+            font-size: 1.4rem;
+        }
     }
 }

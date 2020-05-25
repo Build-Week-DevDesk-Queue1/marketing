@@ -213,6 +213,7 @@ nav .right button.sign-up {
   font-weight: 600;
   font-size: 1.8rem;
   color: #FFFFFF;
+  padding: 1vh 1vh;
   padding: 0.5rem 2rem;
   font-size: 1.6rem;
 }
@@ -296,6 +297,7 @@ footer small {
   font-weight: 600;
   font-size: 1.8rem;
   color: #FFFFFF;
+  padding: 1vh 5vh;
 }
 .landing .content .for-helpers button {
   border: none;
@@ -304,6 +306,7 @@ footer small {
   font-weight: 600;
   font-size: 1.8rem;
   color: #FFFFFF;
+  padding: 1vh 5vh;
 }
 .landing .app-demo img.desktop {
   height: 85vh;
@@ -550,5 +553,6 @@ footer small {
   font-weight: 600;
   font-size: 1.8rem;
   color: #FFFFFF;
+  padding: 1vh 2vh;
   font-size: 1.4rem;
 }

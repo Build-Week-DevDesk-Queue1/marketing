@@ -7,13 +7,14 @@
     flex-direction: column;
 }
 
-.default-button(@bg-color, @text-color){
+.default-button(@bg-color, @text-color, @padding-top-bottom, @padding-left-right){
     border: none;
     border-radius: 5px;
     background-color: @bg-color;
     font-weight: 600;
     font-size: 1.8rem;
     color: @text-color;
+    padding: @padding-top-bottom @padding-left-right;
 }
 
 .outline-button(@color){

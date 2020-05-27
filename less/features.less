@@ -1,0 +1,185 @@
+.features {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5%;
+
+    h1, h2 {
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+
+    .features-container {
+        @media @desktop {
+            .flex-row();
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: stretch;
+        }
+    }
+
+    section {
+        margin-top: 10%;
+        padding: 0 5%;
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 2vh;
+            text-align: center;
+        }
+
+        .feature {
+            margin: 5vh 0;
+
+            @media @desktop {
+                width: 40%;
+                .flex-column();
+                justify-content: center;
+                border: 2px solid @grey-stroke;
+                padding: 5%;
+            }
+        }
+    }
+
+    .students {
+        h2 {
+            color: @murple-purple-text;
+        }
+        
+        .demo {
+            margin: 0 auto;
+            max-width: 350px;
+            margin-bottom: 5%;
+
+            @media @desktop {
+                width: 100%;
+            }
+
+            .input {
+                font-size: 2rem;
+                padding: 3% 5%;
+                border-radius: 3px;
+                border: 1px solid @grey-stroke;
+                color: @tertiary-text-color;
+            }
+
+            .view-ticket {
+                border: 2px solid @grey-stroke;
+                border-left: 5px solid @murple-purple;
+                padding: 5%;
+
+                h4 {
+                    font-size: 1.6rem;
+                    margin-bottom: 1vh;
+                }
+                p {
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .helpers {
+        h2 {
+            color: @surfer-sea;
+        }
+
+        .demo {
+            margin: 0 auto;
+            margin-bottom: 5%;
+            max-width: 350px;
+
+            @media @desktop {
+                width: 100%;
+            }
+
+            .view-ticket {
+                padding: 5% 0%;
+                border: 2px solid @grey-stroke;
+                border-left: 5px solid @murple-purple;
+                display: flex;
+                justify-content: space-evenly;
+
+                .meta-data {
+                    flex: 1;
+                    text-align: center;
+                }
+
+                .info {
+                    padding-right: 5%;
+                    flex: 2.5;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                h4 {
+                    font-weight: bold;
+                }
+
+                h4, p {
+                    margin-bottom: 1vh;
+                }
+                button {
+                    .outline-button(@boop-blue);
+                    align-self: flex-end;
+                    display: block;
+                }
+                .users img {
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                }
+            }
+
+            time {
+                line-height: 1.8rem;
+                font-size: 1.6rem;
+                display: block;
+                width: 100%;
+            }
+
+            .assign {
+                max-width: 300px;
+                margin: 0 auto;
+                .flex-column();
+                border: 2px solid @grey-stroke;
+                border-radius: 5px;
+                padding: 5% 0;
+            }
+
+            .assign .staff {
+                width: 65%;
+                padding: 4% 0;
+                margin: 0 auto;
+                .flex-row();
+            }
+            .checkbox {
+                padding: 5%;
+                margin-right: 5%;
+                display: inline-block;
+                height: 1.8rem;
+                width: 2rem;
+                border: 1px solid @grey-stroke;
+                .flex-row();
+                align-items: center;
+                justify-content: center;
+            }
+
+            .resolved-issue {
+                border: 2px solid @grey-stroke;
+                border-left: 5px solid @murple-purple;
+                padding: 5%;
+                text-align: center;
+
+                h4 {
+                    font-weight: bold;
+                    font-size: 1.6rem;
+                }
+
+                img {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}

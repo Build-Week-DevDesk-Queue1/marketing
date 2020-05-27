@@ -10,35 +10,49 @@
 <body>
     <nav>
         <div class="left">
-            <div class="q-logo">Q <span class="tablet desktop">THE QUEUE</span></div>
+            <a href="./">
+                <div class="q-logo">Q <span class="tablet desktop">THE QUEUE</span></div>
+            </a>
         </div>
         <div class="right">
             <div class="tablet desktop links">
-                <a href="#">Team</a>
-                <a href="#">Features</a>
-                <a href="#">Login</a>
+                <a href="./team.html">Team</a>
+                <a href="./features.html">Features</a>
+                <a href="https://devdeskqueue1.netlify.app/">Login</a>
             </div>
-            <button class="mobile sign-up">Sign Up</button>
+            <a href="https://devdeskqueue1.netlify.app/registration">
+                <button class="mobile sign-up">Sign Up</button>
+            </a>
         </div>
     </nav>
-    <main>
+    <main class="landing">
         <section class="content">
             <div class="for-students">
-
+                <h2>Get help with...</h2>
+                <h3>requesting a hardware loan</h3>
+                <p>Submit help tickets and view your open tickets all in one place.</p>
+                <a href="https://devdeskqueue1.netlify.app/">
+                    <button>Get Started</button>
+                </a>
             </div>
             <div class="for-helpers">
-
+                <h2>Making it easier to help students.</h2>
+                <p>View student help requests and assign tickets to yourself and others.</p>
+                <a href="https://devdeskqueue1.netlify.app/helper">
+                    <button>Get Started</button>
+                </a>
             </div>
         </section>
         <section class="app-demo">
-
+            <img src="img/app-demo-mobile.svg" alt="" class="mobile tablet">
+            <img src="img/app-demo-desktop.svg" alt="" class="desktop">
         </section>
     </main>
     <footer  class="mobile">
         <nav>
-            <a href="#">Features</a>
-            <a href="#">Team</a>
-            <a href="#">Login</a>
+            <a href="./features.html">Features</a>
+            <a href="./team.html">Team</a>
+            <a href="https://devdeskqueue1.netlify.app/">Login</a>
         </nav>
         <small>A Lambda School Build Week student project</small>
     </footer>
